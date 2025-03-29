@@ -1,3 +1,3 @@
-from django.contrib import admin
-from .models import Post
-admin.site.register(Post)   
+from django.shortcuts import render
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
